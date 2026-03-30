@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(to bottom, #2e003e, #4b0082); /* purple gradient */
+  color: #fbeff5;
+  text-align: center;
+  position: relative;
+  overflow: auto; /* allow scrolling */
+}
+
+/* Star layer behind everything */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3; /* subtle stars */
+  z-index: -1; /* keeps stars behind text and images */
+  pointer-events: none; /* ensures stars don’t block scrolling */
+}
+
+.container {
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #d94f9f;
+  margin-bottom: 30px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.heart-collage img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.message {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: Arial, sans-serif; /* message stays Arial */
+}
+
+/* Side picture styles */
+.side-picture {
+  position: fixed;   /* stays in the corner even when scrolling */
+  top: 20px;
+  right: 20px;
+}
+
+.side-picture img {
+  width: 150px;
+  height: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
