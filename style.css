@@ -1,10 +1,24 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Great Vibes', cursive;
-  background: #ffe6f0; /* soft pink background */
-  color: #4a2c2a;
+  font-family: 'Great Vibes'; /* romantic cursive font */
+  background: #ffe6f0; /* rose-blush gradient */
+  color:  #4a2c2a; /* soft gray-brown for text contrast */
   text-align: center;
+  position: relative;
+  overflow: auto; /* allow scrolling */
+}
+/* Star layer behind everything */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3; /* subtle stars */
+  z-index: -1; /* keeps stars behind text and images */
+  pointer-events: none; /* ensures stars don’t block scrolling */
 }
 
 .container {
@@ -13,28 +27,56 @@ body {
 
 h1 {
   font-size: 3em;
-  color: #d94f8c; /* decorative pink heading */
+  color:#d94f8c;
   margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c
+  display inline-block;
+  font-family: 'Great Vibes';
 }
-
+.below {
+  font-family:'sans-serif';
+  color:#4a2c2a;
+  font-size: 30px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+  margin-bottom: 10;
+}
 .subtext {
-  font-family: Arial, sans-serif;
+  font-family:'sans-serif';
+  color:#4a2c2a;
   font-size: 20px;
-  color: #000; /* black text for contrast */
-  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
 }
-
 .heart-collage img {
   width: 400px;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6); /* soft pink glow */
+  height: 400px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: none;
+  border-radius: 20px; /* soft edges, not a circle */
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6); /* pink glow around edges */
 }
 
-.below {
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  color: #4a2c2a;
-  margin-top: 10px;
+.message {
+  font-size: 1.2em;
+  color:#4a2c2a;
+  max-width:800px;
+  margin: 5px auto;
+  line-height: 1.3;
+  font-family: Arial, sans-serif; /* message stays Arial */
+}
+.message p {
+  margin: 1px 0;
+}
+.slides {
+  display: flex;              /* puts images in a row */
+  justify-content: center;    /* centers the row */
+  gap: 15px;                  /* space between images */
+  margin: 20px auto;
+}
+
+.slides img {
+  width: 200px;               /* adjust size */
+  height: 200px;
+  border-radius: 15px;        /* soft edges */
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.6); /* pink glow */
 }
