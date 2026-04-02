@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Dancing Script', cursive;
-  background: linear-gradient(to bottom, #2e003e, #4b0082); /* purple gradient */
-  color: #fbeff5;
+  font-family: 'Great Vibes', cursive; /* romantic cursive font */
+  background: #ffe6f0; /* rose-blush background */
+  color: #4a2c2a; /* soft gray-brown for text contrast */
   text-align: center;
   position: relative;
   overflow: auto; /* allow scrolling */
@@ -19,7 +19,7 @@ body::before {
   background-size: 50px 50px;
   opacity: 0.3; /* subtle stars */
   z-index: -1; /* keeps stars behind text and images */
-  pointer-events: none; /* ensures stars don’t block scrolling */
+  pointer-events: none;
 }
 
 .container {
@@ -28,39 +28,62 @@ body::before {
 
 h1 {
   font-size: 3em;
-  color: #d94f9f;
-  margin-bottom: 30px;
-  font-family: 'Dancing Script', cursive;
+  color: #d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c;
+  display: inline-block;
+  font-family: 'Great Vibes', cursive;
+}
+
+.below {
+  font-family: Arial, sans-serif;
+  color: #4a2c2a;
+  font-size: 30px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-family: Arial, sans-serif;
+  color: #4a2c2a;
+  font-size: 20px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
 }
 
 .heart-collage img {
-  width: 300px;
-  height: auto;
-  margin-bottom: 30px;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 10px;
   background: transparent;
   border: none;
-  box-shadow: none;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6);
 }
 
 .message {
   font-size: 1.2em;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-  font-family: Arial, sans-serif; /* message stays Arial */
+  color: #4a2c2a;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
 }
 
-/* Side picture styles */
-.side-picture {
-  position: fixed;   /* stays in the corner even when scrolling */
-  top: 20px;
-  right: 20px;
+.message p {
+  margin: 10px 0;
 }
 
-.side-picture img {
-  width: 150px;
-  height: auto;
-  background: transparent;
-  border: none;
-  box-shadow: none;
+.slides {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px auto;
 }
+
+.slides img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.6);
+}
+
