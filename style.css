@@ -8,6 +8,7 @@ body {
   position: relative;
   overflow: auto; /* allow scrolling */
 }
+
 .container {
   padding: 50px 20px;
 }
@@ -54,16 +55,34 @@ h1 {
 .message p {
   margin: 1px 0;
 }
+.Header1{
+  font-size: 2em;
+  color:#d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c
+  display inline-block;
+  font-family: 'Great Vibes';
+
+}
+
+
 .slides {
-  display: flex;              /* puts images in a row */
-  justify-content: center;    /* centers the row */
-  gap: 15px;                  /* space between images */
-  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 flexible columns */
+  gap: 12px; /* spacing between photos */
 }
 
 .slides img {
-  width: 200px;               /* adjust size */
-  height: 200px;
-  border-radius: 15px;        /* soft edges */
-  box-shadow: 0 0 20px rgba(255, 192, 203, 0.6); /* pink glow */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps proportions neat */
+  border: 6px solid white; /* Polaroid-style border */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
+
+/* Optional: responsive tweak */
+@media (max-width: 600px) {
+  .slides {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
 }
