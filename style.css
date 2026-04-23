@@ -1,12 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Great Vibes'; 
-  background: #ffe6f0; 
-  color:  #4a2c2a; 
+  font-family: 'Great Vibes', cursive;
+  background: #ffe6f0;
+  color: #4a2c2a;
   text-align: center;
   position: relative;
-  overflow: auto; 
+  overflow: auto;
 }
 
 .container {
@@ -15,101 +15,101 @@ body {
 
 h1 {
   font-size: 3em;
-  color:#d94f8c;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #d94f8c
-  display inline-block;
-  font-family: 'Great Vibes';
-}
-.below {
-  font-family:'sans-serif';
-  color:#4a2c2a;
-  font-size: 30px;
-  text-shadow: 0 0 6px rgba(255,255,255,0.8);
-  margin-bottom: 10;
-}
-.subtext {
-  font-family:'sans-serif';
-  color:#4a2c2a;
-  font-size: 20px;
-  text-shadow: 0 0 6px rgba(255,255,255,0.8);
-}
-.heart-collage img {
-  width: 400px;
-  height: 400px;
-  margin-bottom: 10px;
-  background: transparent;
-  border: none;
-  border-radius: 20px; /* soft edges, not a circle */
-  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6); /* pink glow around edges */
-}
-
-.message {
-  font-size: 1.2em;
-  color:#4a2c2a;
-  max-width:800px;
-  margin: 5px auto;
-  line-height: 1.3;
-  font-family: Arial, sans-serif; /* message stays Arial */
-}
-.message p {
-  margin: 1px 0;
-}
-.Header1{
-  font-size: 2em;
-  color:#d94f8c;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #d94f8c
-  display inline-block;
-  font-family: 'Great Vibes';
-
-}
-
-.slides {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 flexible columns */
-  gap: 12px; /* spacing between photos */
-}
-
-.slides img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* keeps proportions neat */
-  border: 6px solid white; /* Polaroid-style border */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
-}
-
-.header2{
-  font-size: 2em;
-  color:#d94f8c;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #d94f8c
-  display inline-block;
-  font-family: 'Great Vibes';
-
-
-}
-
-/* Optional: responsive tweak */
-@media (max-width: 600px) {
-  .slides {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-.header3 {
-  font-size: 3em;
   color: #d94f8c;
   margin-bottom: 20px;
   border-bottom: 2px solid #d94f8c;
   display: inline-block;
   font-family: 'Great Vibes', cursive;
 }
+
+.below {
+  font-family: sans-serif;
+  color: #4a2c2a;
+  font-size: 30px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+  margin-bottom: 10px;
 }
 
+.subtext {
+  font-family: sans-serif;
+  color: #4a2c2a;
+  font-size: 20px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+}
+
+.heart-collage img {
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+  background: transparent;
+  border: none;
+  border-radius: 20px; /* soft edges */
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6); /* pink glow */
+}
+
+.message {
+  font-size: 1.2em;
+  color: #4a2c2a;
+  max-width: 800px;
+  margin: 5px auto;
+  line-height: 1.3;
+  font-family: Arial, sans-serif;
+}
+
+.message p {
+  margin: 1px 0;
+}
+
+.Header1 {
+  font-size: 2em;
+  color: #d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c;
+  display: inline-block;
+  font-family: 'Great Vibes', cursive;
+}
+
+.slides {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
+
+.header2 {
+  font-size: 2em;
+  color: #d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c;
+  display: inline-block;
+  font-family: 'Great Vibes', cursive;
+}
+
+@media (max-width: 600px) {
+  .slides {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header3 {
+    font-size: 3em;
+    color: #d94f8c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d94f8c;
+    display: inline-block;
+    font-family: 'Great Vibes', cursive;
+  }
+}
 
 .lyrics {
   font-size: 1.2em;
-  color:#4a2c2a;
-  max-width:800px;
+  color: #4a2c2a;
+  max-width: 800px;
   margin: 5px auto;
   line-height: 1.3;
   font-family: Arial, sans-serif;
@@ -119,14 +119,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;              /* full viewport height */
-  background-color: #fce5d8;  /* optional: warm peach background */
+  height: 100vh;
+  background-color: #fce5d8;
 }
 
 video {
-  width: 600px;               /* adjust size */
-  height: auto;               /* keep aspect ratio */
-  border-radius: 8px;         /* optional styling */
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
@@ -134,13 +134,14 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;              /* centers vertically */
+  height: 100vh;
 }
 
 .Mymessage img {
-  width: 500px;               /* make it larger */
-  max-width: 90%;             /* scale down on smaller screens */
-  height: auto;               /* keep aspect ratio */
-  border-radius: 20px;        /* soft edges */
-  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6); /* pink glow */
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6);
 }
+
