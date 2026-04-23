@@ -1,3 +1,6 @@
+/* Import Google Font for GitHub Pages */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -69,24 +72,6 @@ h1 {
   border-bottom: 2px solid #d94f8c;
   display: inline-block;
   font-family: 'Great Vibes', cursive;
-}
-
-/* Dedication section fix */
-.header2 h3 {
-  margin: 0;
-  font-family: 'Great Vibes', cursive;
-}
-
-.header2 p {
-  margin: 5px 0;
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.5em;
-}
-
-audio {
-  display: block;        /* puts player on its own line */
-  margin: 15px auto;     /* centers it neatly under the text */
-  width: 300px;          /* consistent size */
 }
 
 .slides {
