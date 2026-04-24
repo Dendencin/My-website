@@ -5,7 +5,6 @@ body {
   background: #ffe6f0;
   color: #4a2c2a;
   text-align: center;
-  position: relative;
   overflow: auto;
 }
 
@@ -19,7 +18,6 @@ h1 {
   margin-bottom: 20px;
   border-bottom: 2px solid #d94f8c;
   display: inline-block;
-  font-family: 'Great Vibes', cursive;
 }
 
 .below {
@@ -41,52 +39,24 @@ h1 {
   width: 400px;
   height: 400px;
   margin-bottom: 10px;
-  background: transparent;
-  border: none;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(255, 192, 203, 0.6);
 }
 
 .message {
   font-size: 1.2em;
-  color: #4a2c2a;
   max-width: 800px;
   margin: 5px auto;
   line-height: 1.3;
   font-family: Arial, sans-serif;
 }
 
-.message p {
-  margin: 1px 0;
-}
-
-.Header1,
-.header2,
-.header3 {
+.Header1 {
   font-size: 2em;
   color: #d94f8c;
   margin-bottom: 20px;
   border-bottom: 2px solid #d94f8c;
   display: inline-block;
-  font-family: 'Great Vibes', cursive;
-}
-
-/* Dedication section fix */
-.header2 h3 {
-  margin: 0;
-  font-family: 'Great Vibes', cursive;
-}
-
-.header2 p {
-  margin: 5px 0;
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.5em;
-}
-
-audio {
-  display: block;        /* puts player on its own line */
-  margin: 15px auto;     /* centers it neatly under the text */
-  width: 300px;          /* consistent size */
 }
 
 .slides {
@@ -97,24 +67,31 @@ audio {
 
 .slides img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border: 6px solid white;
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
 }
 
-@media (max-width: 600px) {
-  .slides {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .header3 {
-    font-size: 3em;
-  }
+.header2 {
+  font-size: 2em;
+  color: #d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c;
+  display: inline-block;
+}
+
+.header3 {
+  font-size: 3em;
+  color: #d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c;
+  display: inline-block;
+  font-family: 'Great Vibes', cursive;
 }
 
 .lyrics {
   font-size: 1.2em;
-  color: #4a2c2a;
   max-width: 800px;
   margin: 5px auto;
   line-height: 1.3;
@@ -125,8 +102,8 @@ audio {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: #fce5d8;
+  padding: 20px;
 }
 
 video {
@@ -140,7 +117,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 40px;
 }
 
 .Mymessage img {
@@ -150,3 +127,10 @@ video {
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(255, 192, 203, 0.6);
 }
+
+@media (max-width: 600px) {
+  .slides {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
