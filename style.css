@@ -22,6 +22,13 @@ h1 {
   font-family: 'Great Vibes', cursive;
 }
 
+.subtext {
+  font-family: sans-serif;
+  color: #4a2c2a;
+  font-size: 20px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+}
+
 .below {
   font-family: sans-serif;
   color: #4a2c2a;
@@ -30,42 +37,44 @@ h1 {
   margin-bottom: 10px;
 }
 
-.subtext {
-  font-family: sans-serif;
-  color: #4a2c2a;
-  font-size: 20px;
-  text-shadow: 0 0 6px rgba(255,255,255,0.8);
-}
-
 .heart-collage img {
   width: 400px;
   height: 400px;
   margin-bottom: 10px;
   background: transparent;
   border: none;
-  border-radius: 20px; /* soft edges */
-  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6); /* pink glow */
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6);
 }
 
 .message {
   font-size: 1.2em;
   color: #4a2c2a;
   max-width: 800px;
-  margin: 5px auto;
-  line-height: 1.3;
+  margin: 20px auto;
+  line-height: 1.4;
   font-family: Arial, sans-serif;
 }
+
 .message p {
-  margin: 1px 0;
+  margin: 8px 0;
 }
 
-.Header1 {
+.Header1, .header2, .header3 {
   font-size: 2em;
   color: #d94f8c;
-  margin-bottom: 20px;
+  margin: 20px 0;
   border-bottom: 2px solid #d94f8c;
   display: inline-block;
   font-family: 'Great Vibes', cursive;
+}
+
+.header3 {
+  font-size: 2.5em;
+}
+
+.slider {
+  margin-top: 20px;
 }
 
 .slides {
@@ -82,26 +91,9 @@ h1 {
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
 }
 
-.header2 {
-  font-size: 2em;
-  color: #d94f8c;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #d94f8c;
-  display: inline-block;
-  font-family: 'Great Vibes', cursive;
-}
-
 @media (max-width: 600px) {
   .slides {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .header3 {
-    font-size: 3em;
-    color: #d94f8c;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #d94f8c;
-    display: inline-block;
-    font-family: 'Great Vibes', cursive;
   }
 }
 
@@ -109,16 +101,24 @@ h1 {
   font-size: 1.2em;
   color: #4a2c2a;
   max-width: 800px;
-  margin: 5px auto;
-  line-height: 1.3;
+  margin: 20px auto;
+  line-height: 1.5;
   font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+audio {
+  display: block;
+  margin: 15px auto;
+  width: 300px;
 }
 
 .Video1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
+  padding: 40px 0;
   background-color: #fce5d8;
 }
 
@@ -133,7 +133,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 40px 0;
 }
 
 .Mymessage img {
