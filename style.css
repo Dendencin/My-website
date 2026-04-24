@@ -73,29 +73,54 @@ h1 {
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
 }
 
+/* Dedication block */
 .header2 {
   font-size: 2em;
   color: #d94f8c;
-  margin-bottom: 20px;
+  margin: 50px auto 20px auto;
   border-bottom: 2px solid #d94f8c;
-  display: inline-block;
+  display: block;
+  font-family: 'Great Vibes', cursive;
 }
 
+.header2 h3, .header2 p {
+  margin: 0;
+}
+
+/* Audio player block */
+audio {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  display: block;
+  background-color: #fff0f6;
+  border: 2px solid #d94f8c;
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Lyrics header block */
 .header3 {
   font-size: 3em;
   color: #d94f8c;
-  margin-bottom: 20px;
+  margin: 50px auto 20px auto;
   border-bottom: 2px solid #d94f8c;
   display: inline-block;
   font-family: 'Great Vibes', cursive;
 }
 
+/* Lyrics box */
 .lyrics {
   font-size: 1.2em;
   max-width: 800px;
-  margin: 5px auto;
-  line-height: 1.3;
+  margin: 30px auto;
+  line-height: 1.5;
   font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 2px solid #d94f8c;
+  border-radius: 12px;
+  background: #fff0f6;
 }
 
 .Video1 {
