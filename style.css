@@ -1,109 +1,146 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Great Vibes', cursive;
-  background: #ffe6f0;
-  color: #4a2c2a;
+  font-family: 'Great Vibes'; 
+  background: #ffe6f0; 
+  color:  #4a2c2a; 
   text-align: center;
+  position: relative;
+  overflow: auto; 
 }
 
-/* Dedication block */
-.header2 {
-  font-size: 2em;
-  color: #d94f8c;
-  margin: 60px auto 20px auto;   /* extra spacing above */
-  border-bottom: 2px solid #d94f8c;
-  display: inline-block;
-  font-family: 'Great Vibes', cursive;
-}
-.header2 h3, .header2 p {
-  margin: 0;
+.container {
+  padding: 50px 20px;
 }
 
-/* Audio player block */
-audio {
-  width: 80%;
-  max-width: 600px;
-  margin: 30px auto;             /* spacing above and below */
-  display: block;
-  background-color: #fff0f6;     /* soft pink background */
-  border: 2px solid #d94f8c;
-  border-radius: 12px;
-  padding: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* Lyrics header block */
-.header3 {
+h1 {
   font-size: 3em;
-  color: #d94f8c;
-  margin: 60px auto 20px auto;   /* clear separation from audio */
-  border-bottom: 2px solid #d94f8c;
-  display: inline-block;
-  font-family: 'Great Vibes', cursive;
+  color:#d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c
+  display inline-block;
+  font-family: 'Great Vibes';
+}
+.below {
+  font-family:'sans-serif';
+  color:#4a2c2a;
+  font-size: 30px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+  margin-bottom: 10;
+}
+.subtext {
+  font-family:'sans-serif';
+  color:#4a2c2a;
+  font-size: 20px;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+}
+.heart-collage img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: none;
+  border-radius: 20px; /* soft edges, not a circle */
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6); /* pink glow around edges */
 }
 
-/* Lyrics box */
-.lyrics {
+.message {
   font-size: 1.2em;
-  max-width: 800px;
-  margin: 30px auto;
-  line-height: 1.5;
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  border: 2px solid #d94f8c;
-  border-radius: 12px;
-  background: #fff0f6;
+  color:#4a2c2a;
+  max-width:800px;
+  margin: 5px auto;
+  line-height: 1.3;
+  font-family: Arial, sans-serif; /* message stays Arial */
+}
+.message p {
+  margin: 1px 0;
+}
+.Header1{
+  font-size: 2em;
+  color:#d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c
+  display inline-block;
+  font-family: 'Great Vibes';
+
 }
 
-/* Photos grid */
 .slides {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(3, 1fr); /* 3 flexible columns */
+  gap: 12px; /* spacing between photos */
 }
+
 .slides img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  border: 6px solid white;
+  height: 100%;
+  object-fit: cover; /* keeps proportions neat */
+  border: 6px solid white; /* Polaroid-style border */
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
 }
 
-/* Video block */
+.header2{
+  font-size: 2em;
+  color:#d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c
+  display inline-block;
+  font-family: 'Great Vibes';
+
+
+}
+
+/* Optional: responsive tweak */
+@media (max-width: 600px) {
+  .slides {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+.header3 {
+  font-size: 3em;
+  color: #d94f8c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d94f8c;
+  display: inline-block;
+  font-family: 'Great Vibes', cursive;
+}
+}
+
+
+.lyrics {
+  font-size: 1.2em;
+  color:#4a2c2a;
+  max-width:800px;
+  margin: 5px auto;
+  line-height: 1.3;
+  font-family: Arial, sans-serif;
+}
+
 .Video1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fce5d8;
-  padding: 20px;
+  height: 100vh;              /* full viewport height */
+  background-color: #fce5d8;  /* optional: warm peach background */
 }
+
 video {
-  width: 600px;
-  height: auto;
-  border-radius: 8px;
+  width: 600px;               /* adjust size */
+  height: auto;               /* keep aspect ratio */
+  border-radius: 8px;         /* optional styling */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Personal message block */
 .Mymessage {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  height: 100vh;              /* centers vertically */
 }
+
 .Mymessage img {
-  width: 500px;
-  max-width: 90%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6);
+  width: 500px;               /* make it larger */
+  max-width: 90%;             /* scale down on smaller screens */
+  height: auto;               /* keep aspect ratio */
+  border-radius: 20px;        /* soft edges */
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6); /* pink glow */
 }
-
-/* Responsive tweak */
-@media (max-width: 600px) {
-  .slides {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
